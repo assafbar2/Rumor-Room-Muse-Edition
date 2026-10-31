@@ -67,7 +67,7 @@ Live dispatch uses a separate browser counter capped at two. Save a pending mark
 
 ## 6. Optional OpenRouter witness
 
-Disabled by default. `AI_ENABLED=false`, `OPENROUTER_API_KEY=` and `APP_ORIGIN=` are the only runtime settings. A Vercel deployment with all three correctly configured may expose the live option. Pages always builds it out. Only the API handler reads the key; no secrets, error bodies or prompts reach client bundles or logs.
+Disabled by default. `AI_ENABLED=false`, `OPENROUTER_API_KEY=` and `APP_ORIGIN=` are the only runtime settings. A Vercel deployment with all three correctly configured may expose the live option. Pages always builds it out. The key stays on the server; only the API handler sends it to the provider. No secrets, error bodies or prompts reach client bundles or logs.
 
 Request: `{ caseId, gameId, requestId, question }`, with known case ID and UUID game/request IDs. Reject unknown fields, non-JSON requests, missing/wrong Origin, non-POST methods and bodies exceeding 4 KiB, including chunked bodies. The question must be a nonempty normalized string at most 280 Unicode characters and 1,120 UTF-8 bytes. Origin is defense in depth, not authentication.
 
