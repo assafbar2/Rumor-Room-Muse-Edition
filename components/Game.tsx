@@ -122,8 +122,9 @@ function HowTo({ onClose }: { onClose: () => void }) {
         <li>
           <strong>Pick a rumor.</strong>
           <p>
-            Select a claim, then spend one turn tracing its origin, finding a second source,
-            checking an official record, or looking for an update.
+            Select a claim to see its research options. Selecting is free; choosing a move spends
+            one turn tracing its origin, finding a second source, checking an official record, or
+            looking for an update.
           </p>
         </li>
         <li>
@@ -623,6 +624,7 @@ function Investigation({
   const [accuseOpen, setAccuseOpen] = useState(false);
   const [resetOpen, setResetOpen] = useState(false);
   const [announcement, setAnnouncement] = useState('');
+  const researchHeading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     if (game.accusation) document.getElementById('receipt-title')?.focus({ preventScroll: true });
   }, [game.accusation]);
@@ -631,6 +633,14 @@ function Investigation({
   const currentSource =
     source && readable.has(source) ? c.sources.find((s) => s.id === source) : undefined;
   const claim = c.claims.find((x) => x.id === selected)!;
+  function selectClaim(id: ClaimId) {
+    setSelected(id);
+    setAnnouncement(
+      `Claim ${String.fromCharCode(65 + game.order.indexOf(id))} selected. Choosing a claim is free.`,
+    );
+    researchHeading.current?.focus({ preventScroll: true });
+    researchHeading.current?.scrollIntoView({ block: 'start' });
+  }
   function research(move: Move) {
     if (dispatch({ type: 'research', claimId: selected, move })) {
       const outcome = c.research[selected][move];
@@ -712,7 +722,7 @@ function Investigation({
                       className={`claim-card ${selected === id ? 'selected' : ''}`}
                       data-testid={`claim-${id}`}
                       aria-pressed={selected === id}
-                      onClick={() => setSelected(id)}
+                      onClick={() => selectClaim(id)}
                     >
                       <div className="claim-top">
                         <span className="claim-letter">{String.fromCharCode(65 + i)}</span>
@@ -725,10 +735,8 @@ function Investigation({
                       </div>
                       <p>{item.text}</p>
                       <div className="claim-bottom">
-                        <span>
-                          {selected === id ? 'Following this lead' : 'Take a closer look'}
-                        </span>
-                        <ArrowUpRight size={17} />
+                        <span>Investigate this claim</span>
+                        <ArrowDown size={17} />
                       </div>
                     </button>
                   );
@@ -738,9 +746,9 @@ function Investigation({
                 <div className="research-panel-heading">
                   <div>
                     <span className="eyebrow">02 / FOLLOW THE RECEIPTS</span>
-                    <h3>
+                    <h3 ref={researchHeading} tabIndex={-1}>
                       {researchLeft(game)
-                        ? 'How do you want to dig?'
+                        ? 'Choose a research move.'
                         : 'Time to read what you found.'}
                     </h3>
                   </div>
@@ -750,7 +758,8 @@ function Investigation({
                 </div>
                 <p className="selected-lead">
                   Investigating{' '}
-                  <strong>claim {String.fromCharCode(65 + game.order.indexOf(selected))}</strong>
+                  <strong>claim {String.fromCharCode(65 + game.order.indexOf(selected))}</strong>.
+                  Selecting a claim is free.
                 </p>
                 <div className="research-actions">
                   {moves.map((m) => {

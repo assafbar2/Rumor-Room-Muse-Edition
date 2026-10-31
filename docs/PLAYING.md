@@ -6,7 +6,7 @@ Choose any of the ten case files. Read the briefing, then decide which story the
 
 ## Follow a lead
 
-Select a claim card. Spend one research turn on a move:
+Select **Investigate this claim** on any claim card to jump to its research choices. Selecting or reselecting a claim is free. Then spend one research turn on a move:
 
 | Move                 | What it looks for                                             |
 | -------------------- | ------------------------------------------------------------- |

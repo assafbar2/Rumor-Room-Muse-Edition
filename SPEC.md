@@ -1,10 +1,10 @@
 # Rumor Room — Build Specification
 
-**Version:** 6.0 · October 31, 2026
+**Version:** 6.1 · October 31, 2026
 
-**Owner:** Assaf Barnir · **Release:** 1.0.0
+**Owner:** Assaf Barnir · **Release:** 1.0.1
 
-**Status:** implemented for release 1.0.0. Ten authored cases, static-first delivery; optional live AI stays disabled pending funded evaluation.
+**Status:** implemented for release 1.0.1. Ten authored cases, static-first delivery; optional live AI stays disabled pending funded evaluation.
 
 This is the single specification for Rumor Room. It replaces the earlier review proposals. The original document has been renamed to remove obsolete branding; the repository itself keeps its existing name. The complete case texts appear in the appendix. `content/cases.json` is their machine-readable representation.
 
@@ -21,7 +21,7 @@ No accounts, paid tiers, multiplayer, analytics service, live web search, upload
 ## 2. Gameplay contract
 
 1. Choose a case and read its briefing. Show **Fictional case file** throughout investigation.
-2. Inspect four equally weighted claim cards. Shuffle once on a new run, preserving order on refresh.
+2. Inspect four equally weighted claim cards. Shuffle once on a new run, preserving order on refresh. Activating **Investigate this claim** selects that card and moves focus and the viewport to the research choices, including when the card was already selected. Selection is free; only choosing a research move spends a turn. Respect reduced-motion preferences when scrolling.
 3. Spend up to four research turns across the four moves below. A claim/move pair can be used once; a valid empty lookup still costs a turn. Source cards deduplicate by ID; research notes remain distinct.
 4. Inspect the prepared screenshot and crop for free. Show the exact authored transcript. Pinning adds one image clue; reopening is free. The comparison note reveals the primary record only after that record has been discovered.
 5. Use up to two interview turns, choosing among five prepared questions. Duplicate questions are unavailable in the same run. On a server deployment, an explicitly enabled live witness may answer a custom question instead.

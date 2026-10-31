@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-10-31
+
+- Select **Investigate this claim** to move straight to the research choices, including when that claim is already selected. Keyboard focus follows the action and scrolling respects reduced-motion preferences.
+- Clarify in the game and [player guide](docs/PLAYING.md#follow-a-lead) that selecting a claim is free; choosing a research move spends a turn.
+
 ## 1.0.0 — 2026-10-31
 
 - Solve ten complete fictional deduction cases with 40 claims, 100 documents, 160 research outcomes, ten image clues, and 50 prepared witness questions. [Start with the player guide](docs/PLAYING.md).
