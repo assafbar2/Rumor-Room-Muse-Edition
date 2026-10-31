@@ -1031,6 +1031,7 @@ button {
   font-size: 24px;
   margin: 8px 0 0;
   line-height: 1.2;
+  scroll-margin-top: 64px;
 }
 .turn-cost {
   font-family: var(--mono);
@@ -1041,7 +1042,8 @@ button {
   flex-shrink: 0;
 }
 .selected-lead {
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--muted);
   margin: 13px 0 14px;
 }

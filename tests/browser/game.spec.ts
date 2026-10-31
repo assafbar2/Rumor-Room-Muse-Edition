@@ -56,6 +56,41 @@ test('the complete case shelf is accessible and loads its own artwork', async ({
   expect(failures).toEqual([]);
 });
 
+test('claim selection brings research choices into view without spending a turn', async ({
+  page,
+}, testInfo) => {
+  await page.goto('./#case=t2-velvet-rope');
+  const heading = page.locator('.research-panel h3');
+  await page.locator('.claim-card[aria-pressed="true"]').click();
+  await expect(heading).toBeFocused();
+  await expect(heading).toBeInViewport();
+  await expect(page.getByTestId('move-primary')).toBeInViewport();
+  await expect(page.getByTestId('research-left')).toHaveText('4');
+
+  const otherId = await page
+    .locator('.claim-card[aria-pressed="false"]')
+    .first()
+    .getAttribute('data-testid');
+  const other = page.getByTestId(otherId!);
+  await other.focus();
+  await page.keyboard.press('Enter');
+  await expect(other).toHaveAttribute('aria-pressed', 'true');
+  await expect(heading).toBeFocused();
+  await expect(page.getByTestId('move-primary')).toBeInViewport();
+  await expect(page.getByTestId('research-left')).toHaveText('4');
+
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await other.focus();
+  await page.keyboard.press('Space');
+  await expect(heading).toBeFocused();
+  await expect(page.getByTestId('move-primary')).toBeInViewport();
+  await expect(page.getByTestId('research-left')).toHaveText('4');
+  await page.screenshot({ path: `artifacts/${testInfo.project.name}/research-navigation.png` });
+
+  await page.getByTestId('move-primary').click();
+  await expect(page.getByTestId('research-left')).toHaveText('3');
+});
+
 for (const c of cases)
   test(`${c.number}. ${c.title} plays to a cited 130-point verdict without an API`, async ({
     page,
