@@ -22,7 +22,7 @@ npm run test:e2e
 
 The suite starts the exported preview and tests desktop Chromium at 1440×900 and mobile Chromium at 390×844. On Linux CI, install Chromium with `npx playwright install --with-deps chromium`.
 
-Every case plays through two research moves, source reading, its image clue, an interview, a confirmed verdict, and a saved 130-point receipt. Other checks cover wrong verdicts, independent cases, two tabs, reset/replay scopes, filters, keyboard dialogs, denied storage, reduced motion, and narrow-layout overflow. API interception verifies prepared play sends no inference requests.
+Every case plays through two research moves, source reading, its image clue, an interview, a confirmed verdict, and a saved 130-point receipt. Claim selection checks pointer and keyboard activation, repeated selection, research-heading focus and visible choices, and no turn spent until a research move is chosen. That path also runs with reduced motion enabled. Other checks cover wrong verdicts, independent cases, two tabs, reset/replay scopes, filters, keyboard dialogs, denied storage, reduced motion, and narrow-layout overflow. API interception verifies prepared play sends no inference requests.
 
 Axe checks the shelf, investigation, receipt, and exhibit dialog. Screenshots appear in ignored `artifacts/desktop/` and `artifacts/mobile/`; failure traces appear in `test-results/`. Automated accessibility checks do not replace keyboard and visual inspection. Safari and Firefox are not part of the automated matrix.
 
@@ -50,7 +50,7 @@ The script takes three cold-context mobile samples at 390×844, 10 Mbps download
 
 Set `PERF_URL` to a public trailing-slash URL to measure that deployment under the same browser throttling.
 
-## Recorded release baseline
+## Recorded v1.0.0 baseline
 
 Local verification on October 31, 2026, using Node 24.18.0 and Chromium 156.0.8078.4:
 
