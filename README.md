@@ -8,6 +8,14 @@ Ten fictional mysteries about glamorous people, suspicious stories, and the deta
 
 The game features an editorial green-and-paper design, original illustrations, responsive controls, keyboard-accessible dialogs, and local saved progress. Each case has a fixed solution; replay shuffles the claims, not the mystery.
 
+## From live investigation to authored mysteries
+
+This is the current Rumor Room game: ten fictional cases with prepared evidence, witnesses, and fixed solutions. The public release makes no inference calls.
+
+The [original live-AI build](https://github.com/assafbar2/rumor-room#readme) remains available as a technical case study: three entertainment investigations using Gemini, Google ADK, and Parallel Search at runtime. Its research agent and citation safeguards solve a different problem from this authored collection.
+
+[Read the product case study](https://www.barnir.co/builds/rumor-room) for what changed, why, and links to both builds.
+
 ## Run locally
 
 Use Node.js 22 or newer (see `.nvmrc`).
