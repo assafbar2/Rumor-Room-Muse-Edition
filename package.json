@@ -1,0 +1,49 @@
+{
+  "name": "rumor-room",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "start": "next start",
+    "preview": "node scripts/serve-export.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "content:check": "node --import tsx scripts/check-content.ts && node --import tsx scripts/sync-spec.ts --check",
+    "content:sync": "node --import tsx scripts/sync-spec.ts",
+    "assets": "node --import tsx scripts/generate-assets.ts",
+    "check": "npm run content:check && npm run format:check && npm run typecheck && npm test",
+    "test:live": "node scripts/test-live.mjs",
+    "perf": "node scripts/performance.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@fontsource/bodoni-moda": "5.3.0",
+    "@fontsource/dm-sans": "5.3.0",
+    "lucide-react": "1.66.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "prettier": "3.6.2",
+    "sharp": "0.35.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  }
+}

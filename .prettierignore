@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+artifacts
+test-results
+playwright-report
+.gstack
+coverage
+content
+public
+SPEC.md
+package-lock.json
+next-env.d.ts

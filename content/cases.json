@@ -1,0 +1,3130 @@
+[
+  {
+    "id": "t1-leaked-launch",
+    "number": 1,
+    "title": "The Leaked Launch",
+    "category": "Tech & ambition",
+    "art": "signal",
+    "difficulty": 1,
+    "minutes": "4–7",
+    "teaser": "Three headlines. One screenshot. A launch date with a very good publicist.",
+    "briefing": "A launch screenshot is moving through the developer press. Four claims are on your desk. You have four research turns to separate confirmed details from a story that outran its evidence.",
+    "setting": "The developer press · October 28",
+    "asOf": "2026-10-28T18:00:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Halcyon-5 has a confirmed public launch on November 1, 2026.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c2",
+        "text": "The Halcyon-5 developer preview accepts both text and image inputs.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "The public Halcyon SDK includes a TypeScript starter example.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "A public Halcyon developer Q&A is scheduled for November 3, 2026 at 17:00 UTC.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "Launch screenshot posted",
+        "publisher": "In-world Forum",
+        "publishedAt": "2026-10-26T10:00:00Z",
+        "group": "launch-copy-chain",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "A forum account posted the attached launch card and called November 1 the confirmed public release date for Halcyon-5. The account supplied no announcement URL or invitation from the company. This post is the earliest instance in the case file. The attachment is screenshot s1."
+      },
+      {
+        "id": "e2",
+        "title": "Launch date circulating",
+        "publisher": "Newsroom Wire",
+        "publishedAt": "2026-10-26T11:00:00Z",
+        "group": "launch-copy-chain",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Halcyon-5 is reportedly launching November 1. Our date comes from the launch card posted on the In-world Forum. We have not independently confirmed the date with Halcyon Research."
+      },
+      {
+        "id": "e3",
+        "title": "Three reports, one screenshot",
+        "publisher": "Developer Digest",
+        "publishedAt": "2026-10-26T13:00:00Z",
+        "group": "launch-copy-chain",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "The November 1 date now appears in three reports. This digest cites Newsroom Wire, which cites the forum screenshot. We have no separate announcement or firsthand confirmation."
+      },
+      {
+        "id": "e4",
+        "title": "Release status and artifact register",
+        "publisher": "Halcyon Research",
+        "publishedAt": "2026-10-28T16:00:00Z",
+        "group": "release-register",
+        "claimId": "c1",
+        "relation": "contradicts",
+        "body": "Status at 16:00 UTC on October 28: no public launch date for Halcyon-5 has been confirmed. Artifact p017 is an October 20 layout prototype, not a release announcement. Its original date field said DATE TBC. The circulating November 1 card retains p017 but changes that field. Developer preview access and the November 3 Q&A remain separate from public release."
+      },
+      {
+        "id": "e5",
+        "title": "Developer preview input guide",
+        "publisher": "Halcyon Research",
+        "publishedAt": "2026-10-23T09:00:00Z",
+        "group": "preview-docs",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "The current Halcyon-5 developer preview accepts text prompts and still-image inputs. These capabilities are available to preview participants. Preview access is not a public product release."
+      },
+      {
+        "id": "e6",
+        "title": "Preview hands-on notebook",
+        "publisher": "Independent Lab Notebook",
+        "publishedAt": "2026-10-24T12:00:00Z",
+        "group": "preview-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "On October 24 we independently tested the preview with a text prompt and a PNG image. Both requests were accepted. This is our own observation, not a repetition of the input guide. We make no claim about the public launch date."
+      },
+      {
+        "id": "e7",
+        "title": "SDK v0.3 file manifest",
+        "publisher": "Halcyon SDK Repository",
+        "publishedAt": "2026-10-25T09:00:00Z",
+        "group": "sdk-source",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "The public SDK v0.3 manifest includes examples/typescript/starter.ts and its setup instructions. This manifest records files actually present in that SDK version."
+      },
+      {
+        "id": "e8",
+        "title": "Running the TypeScript starter",
+        "publisher": "Independent Builder Notes",
+        "publishedAt": "2026-10-26T08:00:00Z",
+        "group": "sdk-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "We downloaded SDK v0.3 and ran examples/typescript/starter.ts. The example is present and its TypeScript setup steps work. This walkthrough is based on our own checkout."
+      },
+      {
+        "id": "e9",
+        "title": "Developer Q&A calendar entry",
+        "publisher": "Halcyon Events",
+        "publishedAt": "2026-10-27T09:00:00Z",
+        "group": "qa-organizer",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Public developer Q&A: November 3, 2026, 17:00 UTC. The agenda is preview feedback and SDK questions. This calendar entry does not announce a public model launch."
+      },
+      {
+        "id": "e10",
+        "title": "Q&A participant confirmation",
+        "publisher": "Guest Developer Journal",
+        "publishedAt": "2026-10-27T15:00:00Z",
+        "group": "qa-participant",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "As an invited guest, I accepted the developer Q&A invitation for November 3 at 17:00 UTC. I will discuss the preview and SDK. This confirmation is based on my own invitation."
+      }
+    ],
+    "research": {
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "The earliest item here is a forum screenshot with no first-party announcement URL."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three reports trace back to one screenshot. They are one origin group, not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The official register confirms no public launch date and identifies p017 as a prototype."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The October 28 register is the later update: no public launch date is confirmed."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The preview input guide documents both text and still-image input."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "The guide and an independent hands-on observation support the same input capabilities."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party guide supports text and image inputs for the developer preview."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "The later hands-on notebook independently reports both input types working."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The SDK manifest lists a TypeScript starter in version 0.3."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "The manifest and an independent checkout both establish that the starter exists."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The SDK's own manifest records the TypeScript starter file."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later builder walkthrough reports running the starter from a separate checkout."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The organizer's calendar announces the Q&A, not a public model launch."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "The organizer's calendar and a participant's own invitation agree on the Q&A."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The event calendar schedules November 3 at 17:00 UTC for preview feedback and SDK questions."
+        },
+        "fresh": {
+          "sourceIds": [],
+          "note": "No matching update in this case file."
+        }
+      }
+    },
+    "witness": {
+      "name": "The Wire Editor",
+      "role": "A deadline in a good suit",
+      "persona": "Concise newsroom noir; slightly defensive about publishing quickly, never hostile.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "Where did your launch-date tip come from?",
+          "text": "My launch-date tip came from the forum card and the reports repeating it."
+        },
+        {
+          "id": "w2",
+          "question": "Did you confirm the release with the company?",
+          "text": "I did not obtain a first-party public-launch announcement."
+        },
+        {
+          "id": "w3",
+          "question": "What inputs does the developer preview accept?",
+          "text": "The preview documentation and a hands-on notebook describe text and image inputs."
+        },
+        {
+          "id": "w4",
+          "question": "Is there a TypeScript SDK example?",
+          "text": "The SDK manifest and a builder walkthrough describe a TypeScript starter."
+        },
+        {
+          "id": "w5",
+          "question": "What is happening on November 3?",
+          "text": "The calendar and a participant confirmation describe the November 3 Q&A at 17:00 UTC."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The circulating launch card",
+      "eyebrow": "HALCYON-5",
+      "headline": "01 NOV 2026",
+      "subline": "PUBLIC RELEASE",
+      "detail": "asset revision: p017",
+      "footer": "CASE FILE — FICTIONAL",
+      "transcript": "HALCYON-5\n01 NOV 2026\nPUBLIC RELEASE\nasset revision: p017\nCASE FILE — FICTIONAL",
+      "initialNote": "The card says 01 NOV 2026 and carries revision p017. The image alone does not establish an official launch.",
+      "comparisonNote": "The register identifies p017 as an October 20 prototype whose date field was DATE TBC. This circulating card changes the date to November 1.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c1",
+      "reasonType": "signal",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The register confirms that no public launch date was announced. The circulating card kept the prototype revision p017 but replaced DATE TBC with November 1. All three reports lead back to that same unsupported screenshot.",
+      "lesson": "Three reports can still be one source. Follow the origin, then check the primary record."
+    }
+  },
+  {
+    "id": "t2-velvet-rope",
+    "number": 2,
+    "title": "The Velvet Rope",
+    "category": "Nightlife & status",
+    "art": "velvet",
+    "difficulty": 1,
+    "minutes": "4–7",
+    "teaser": "Her name was on the list. The internet thinks it knows which list.",
+    "briefing": "Noor Vale arrives at Club Sable dressed like an invitation. A cropped door sheet says HOLD beside her name, and by morning it is a blacklist scandal. The door has a story. The paperwork has a better one.",
+    "setting": "Club Sable · The morning after",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Club Sable reached its licensed capacity before midnight.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "Noor Vale was personally blacklisted from Club Sable that night.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c3",
+        "text": "The rooftop set was performed by DJ Iona.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "The midnight menu included an alcohol-free martini.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "A name on hold",
+        "publisher": "After Dark Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "An account posted a crop reading NOOR VALE — HOLD and described it as a personal blacklist. The crop does not include the column legend or later entry status."
+      },
+      {
+        "id": "e2",
+        "title": "Sable snubs Noor",
+        "publisher": "Velvet Dispatch",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "Our report of a personal ban is based on the door-sheet crop shared by After Dark Feed. We have not spoken to the door team."
+      },
+      {
+        "id": "e3",
+        "title": "The blacklist everyone is talking about",
+        "publisher": "Night Window",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "Velvet Dispatch reports Noor was blacklisted. We are reproducing the same cropped door sheet; we have no separate record of a ban."
+      },
+      {
+        "id": "e4",
+        "title": "Door log and HOLD legend",
+        "publisher": "Club Sable Duty Manager",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c2",
+        "relation": "contradicts",
+        "body": "HOLD means temporary capacity queue for all unadmitted guests. At 23:56 Noor Vale joined that queue. The authenticated wristband log records her admission at 00:14. No personal exclusion was applied to her. The crop omitted the HOLD legend and admitted-at column."
+      },
+      {
+        "id": "e5",
+        "title": "Capacity counter",
+        "publisher": "Club Sable Operations",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "At 23:48 the count reached the licensed limit of 180. Admissions paused until departures freed capacity."
+      },
+      {
+        "id": "e6",
+        "title": "The queue at midnight",
+        "publisher": "Independent Night Reporter",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I watched the door pause entry at 23:48. The public capacity display read 180 of 180; several guests, not just Noor, waited."
+      },
+      {
+        "id": "e7",
+        "title": "Rooftop running order",
+        "publisher": "Club Sable Music Desk",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "DJ Iona is contracted for the rooftop midnight set. Her soundcheck and arrival were signed off at 22:30."
+      },
+      {
+        "id": "e8",
+        "title": "A set above the city",
+        "publisher": "Independent Set Reviewer",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "I was on the rooftop and watched Iona perform the midnight set. My notes identify the performer from her live introduction."
+      },
+      {
+        "id": "e9",
+        "title": "Midnight drinks card",
+        "publisher": "Club Sable Bar",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "The menu includes Still Trouble, an alcohol-free martini made with verjus, olive brine and rosemary."
+      },
+      {
+        "id": "e10",
+        "title": "A very sober olive",
+        "publisher": "Independent Bar Notebook",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "I ordered Still Trouble from the midnight menu. The bartender confirmed the listed verjus, brine and rosemary recipe contains no alcohol."
+      }
+    ],
+    "research": {
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "HOLD is a capacity status. The same record shows Noor being admitted at 00:14."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. HOLD is a capacity status. The same record shows Noor being admitted at 00:14."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Rae Mercer",
+      "role": "The door captain",
+      "persona": "Dry, observant and unimpressed by followers. All people in this fiction are adults.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "What does HOLD mean at the door?",
+          "text": "HOLD is our temporary capacity queue. It is not the code for a personal exclusion."
+        },
+        {
+          "id": "w2",
+          "question": "Did anyone get in after midnight?",
+          "text": "The wristband system records admissions after capacity frees up."
+        },
+        {
+          "id": "w3",
+          "question": "Who played the rooftop?",
+          "text": "Iona was on the rooftop running order."
+        },
+        {
+          "id": "w4",
+          "question": "Was the club actually full?",
+          "text": "The counter reached 180 before midnight."
+        },
+        {
+          "id": "w5",
+          "question": "What was the zero-proof drink?",
+          "text": "The bar listed Still Trouble, with verjus, olive brine and rosemary."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The cropped door sheet",
+      "eyebrow": "CLUB SABLE / DOOR",
+      "headline": "NOOR VALE",
+      "subline": "23:56  ·  HOLD",
+      "detail": "shift: 28 OCT / line 041",
+      "footer": "CROP FROM A LARGER SHEET",
+      "transcript": "CLUB SABLE / DOOR\nNOOR VALE\n23:56  ·  HOLD\nshift: 28 OCT / line 041\nCROP FROM A LARGER SHEET",
+      "initialNote": "HOLD sits beside a guest name. This crop does not explain the status or show later admissions.",
+      "comparisonNote": "The full log defines HOLD as the capacity queue and records Noor entering at 00:14. The missing columns change the story.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c2",
+      "reasonType": "velvet",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "Noor was queued, not personally blacklisted. The full door record defines HOLD as a temporary capacity status and logs her eventual admission. The three scandal reports all recycled a crop that hid those columns.",
+      "lesson": "A label without its legend is an invitation to invent a story."
+    }
+  },
+  {
+    "id": "t3-kiss-and-tell",
+    "number": 3,
+    "title": "Kiss & Tell",
+    "category": "Romance & reputation",
+    "art": "kiss",
+    "difficulty": 2,
+    "minutes": "4–7",
+    "teaser": "A rain-soaked kiss. Two very photogenic alibis. One inconvenient call sheet.",
+    "briefing": "Mira Sen and Jules Hart share a spectacular kiss outside the Hotel Étoile. A viral still calls it an unscripted reunion. Their chemistry is real enough to distract you from the tiny production code in the corner.",
+    "setting": "Hotel Étoile · A rainy premiere week",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Mira and Jules attended the same film premiere.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "The rooftop premiere party raised funds for an arts school.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "The photographed kiss was filmed outside the Hotel Étoile.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "The viral kiss image captures an unscripted private moment.",
+        "supportEvidenceIds": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "The kiss that launched a thousand captions",
+        "publisher": "Flashbulb Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "A still of Mira and Jules kissing in the rain is captioned a private reunion. It carries the mark E17 / TAKE 04. The uploader provides no sequence or photographer account."
+      },
+      {
+        "id": "e2",
+        "title": "They are back together, apparently",
+        "publisher": "The Evening Glance",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "We call the image an unscripted moment based on Flashbulb Feed. We did not witness the kiss."
+      },
+      {
+        "id": "e3",
+        "title": "A very public private moment",
+        "publisher": "Screen Door",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "The Evening Glance links the same E17 / TAKE 04 still. We have no additional footage or firsthand account."
+      },
+      {
+        "id": "e4",
+        "title": "Scene E17 call sheet and release record",
+        "publisher": "Afterglow Production Office",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c4",
+        "relation": "contradicts",
+        "body": "Scene E17 is a scripted kiss between the characters played by Mira Sen and Jules Hart. Take 04 was filmed outside the Hotel Étoile with rain equipment. The promotional still marked E17 / TAKE 04 was exported from that take. This record says nothing about the actors’ private relationship."
+      },
+      {
+        "id": "e5",
+        "title": "Premiere guest check-in",
+        "publisher": "Afterglow Premiere Desk",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "Mira Sen and Jules Hart both checked in for the October 28 Afterglow premiere."
+      },
+      {
+        "id": "e6",
+        "title": "Two arrivals, one premiere",
+        "publisher": "Independent Carpet Reporter",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I personally photographed Mira and Jules arriving separately at the same Afterglow premiere."
+      },
+      {
+        "id": "e7",
+        "title": "Benefit accounting note",
+        "publisher": "Étoile Event Office",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "The rooftop premiere party raised $12,000, transferred to the Eastbank Arts School scholarship fund."
+      },
+      {
+        "id": "e8",
+        "title": "Scholarship receipt",
+        "publisher": "Eastbank Arts School",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "Our bank confirmation records the $12,000 premiere-party donation. We received it for student scholarships."
+      },
+      {
+        "id": "e9",
+        "title": "Location permit E17",
+        "publisher": "Étoile Location Office",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "Production was permitted to film scene E17 on the exterior pavement of Hotel Étoile. No interior room was part of the scene."
+      },
+      {
+        "id": "e10",
+        "title": "Rain on a clear night",
+        "publisher": "Independent Location Observer",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "From across the street I watched the film crew, rain rig and actors working outside Hotel Étoile. I did not see a private encounter."
+      }
+    ],
+    "research": {
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "E17 / TAKE 04 identifies a scripted scene. It establishes no private relationship."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. E17 / TAKE 04 identifies a scripted scene. It establishes no private relationship."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Sol Vega",
+      "role": "The stills editor",
+      "persona": "Wry, precise and fond of a beautiful composition; never guesses about private relationships.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "What is E17 / TAKE 04?",
+          "text": "It is the scene and take identifier attached to the production still."
+        },
+        {
+          "id": "w2",
+          "question": "Did you witness a private reunion?",
+          "text": "I worked with production images. I have no private-relationship information."
+        },
+        {
+          "id": "w3",
+          "question": "Where was the image filmed?",
+          "text": "The location record names the exterior of Hotel Étoile."
+        },
+        {
+          "id": "w4",
+          "question": "Were both actors at the premiere?",
+          "text": "The premiere check-in records both Mira and Jules."
+        },
+        {
+          "id": "w5",
+          "question": "Who received the benefit money?",
+          "text": "The event record and school receipt name Eastbank Arts School."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The still everyone shared",
+      "eyebrow": "ÉTOILE / NIGHT EXTERIOR",
+      "headline": "ONE MORE KISS",
+      "subline": "MIRA + JULES",
+      "detail": "E17 / TAKE 04",
+      "footer": "PROMOTIONAL CONTACT SHEET",
+      "transcript": "ÉTOILE / NIGHT EXTERIOR\nONE MORE KISS\nMIRA + JULES\nE17 / TAKE 04\nPROMOTIONAL CONTACT SHEET",
+      "initialNote": "The image includes a scene-and-take style code. A still alone cannot establish the circumstances of a kiss.",
+      "comparisonNote": "The call sheet matches E17 / TAKE 04 to a scripted scene. The photo is authentic; its private-moment caption is not.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c4",
+      "reasonType": "kiss",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The picture is a production still from a scripted kiss, identified by the exact E17 / TAKE 04 code. A real image can carry a false caption. The records do not establish whether the actors are dating, and the verdict makes no claim about that.",
+      "lesson": "An authentic image does not make its caption authentic."
+    }
+  },
+  {
+    "id": "t4-ninth-pour",
+    "number": 4,
+    "title": "The Ninth Pour",
+    "category": "Wine & temptation",
+    "art": "wine",
+    "difficulty": 2,
+    "minutes": "4–7",
+    "teaser": "The vintage is legendary. The label is gorgeous. The tasting card is doing a lot of work.",
+    "briefing": "At an invitation-only cellar dinner, glass nine becomes the most photographed drink in town. A small tag is being treated as proof that guests tasted a rare 1988 reserve. Read the label like the sommelier reads the ledger.",
+    "setting": "The Garnet Cellar · Table nine",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The wine served as pour nine was the estate’s 1988 reserve.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c2",
+        "text": "The dinner offered nine tasting pours.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "The estate’s reserve bottle remained sealed in its vault.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "Chef Ana Lune served a mushroom course with pour nine.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "A sip of 1988",
+        "publisher": "Cellar Social",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "A guest posted the tag FLIGHT V88 / POUR 09 and called the glass a 1988 reserve. No bottle label or decanting record appears in the post."
+      },
+      {
+        "id": "e2",
+        "title": "The rare reserve comes out",
+        "publisher": "Fine Print Wine",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Our claim that the dinner poured the 1988 reserve comes from Cellar Social’s tag photograph."
+      },
+      {
+        "id": "e3",
+        "title": "Nine pours and a legend",
+        "publisher": "The Dinner Note",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Fine Print Wine reports a 1988 pour. We have the same FLIGHT V88 image, not an independent bottle inspection."
+      },
+      {
+        "id": "e4",
+        "title": "Decanting ledger: flight V88",
+        "publisher": "Garnet Cellar Sommelier",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c1",
+        "relation": "contradicts",
+        "body": "V88 is the dinner’s flight identifier, not a vintage. Pour 09 was decanted from the 2022 estate red, bottle serial R22-091. The 1988 reserve, serial R88-001, was not opened or poured."
+      },
+      {
+        "id": "e5",
+        "title": "Nine-course wine sequence",
+        "publisher": "Garnet Cellar Events",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "The tasting menu lists nine wine pours, numbered 01 through 09. No tenth pour is scheduled."
+      },
+      {
+        "id": "e6",
+        "title": "Counting the glasses",
+        "publisher": "Independent Dining Notebook",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "I attended the dinner and recorded nine numbered pours at my place setting."
+      },
+      {
+        "id": "e7",
+        "title": "Vault seal register",
+        "publisher": "Garnet Cellar Custodian",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "Reserve serial R88-001 has an intact seal at the checks immediately before and after dinner. It remained in the locked vault."
+      },
+      {
+        "id": "e8",
+        "title": "Seal check witness",
+        "publisher": "Independent Inventory Auditor",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "I witnessed both seal checks on R88-001 and countersigned the register. The same sealed bottle was present after service."
+      },
+      {
+        "id": "e9",
+        "title": "Kitchen service sheet",
+        "publisher": "Ana Lune’s Kitchen",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Chef Ana Lune’s final savory course is roasted mushroom with black garlic. It is paired with pour 09."
+      },
+      {
+        "id": "e10",
+        "title": "The last savory plate",
+        "publisher": "Independent Dining Critic",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Ana Lune introduced the mushroom course at the table. It arrived with the glass marked 09."
+      }
+    ],
+    "research": {
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "V88 labels the flight. The ledger records a 2022 wine for pour nine."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. V88 labels the flight. The ledger records a 2022 wine for pour nine."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Béa March",
+      "role": "The sommelier",
+      "persona": "Sensuous about wine, exact about inventory. She never treats price as proof of taste.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "Does V88 mean a 1988 vintage?",
+          "text": "V88 is the identifier of the tasting flight."
+        },
+        {
+          "id": "w2",
+          "question": "Which bottle supplied pour nine?",
+          "text": "The decanting ledger names bottle R22-091."
+        },
+        {
+          "id": "w3",
+          "question": "How many pours were served?",
+          "text": "The service sequence runs from 01 through 09."
+        },
+        {
+          "id": "w4",
+          "question": "Was the reserve opened?",
+          "text": "The vault checks record R88-001 with its seal intact."
+        },
+        {
+          "id": "w5",
+          "question": "What was the last savory course?",
+          "text": "Ana Lune’s mushroom and black garlic course accompanied pour 09."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "A very suggestive tasting tag",
+      "eyebrow": "THE GARNET CELLAR",
+      "headline": "FLIGHT V88",
+      "subline": "POUR 09",
+      "detail": "table nine / private tasting",
+      "footer": "PLEASE KEEP YOUR TASTING CARD",
+      "transcript": "THE GARNET CELLAR\nFLIGHT V88\nPOUR 09\ntable nine / private tasting\nPLEASE KEEP YOUR TASTING CARD",
+      "initialNote": "V88 appears next to FLIGHT. The card does not explicitly state a vintage.",
+      "comparisonNote": "The ledger defines V88 as a flight code and names the 2022 bottle actually poured. The reserve’s 1988 vintage belongs to a different bottle.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c1",
+      "reasonType": "wine",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The viral interpretation turned a flight code into a vintage. The decanting ledger identifies pour nine as the 2022 estate red. The 1988 reserve stayed sealed; the independent vault check confirms that separate fact.",
+      "lesson": "An identifier is not a description. Find out what a code actually encodes."
+    }
+  },
+  {
+    "id": "t5-silk-after-midnight",
+    "number": 5,
+    "title": "Silk After Midnight",
+    "category": "Fashion & rivalry",
+    "art": "silk",
+    "difficulty": 2,
+    "minutes": "4–7",
+    "teaser": "One spiral-cut dress. Two designers. A feud tailored to fit a cropped date.",
+    "briefing": "Aster Vale’s spiral dress turns a runway into a slow-motion argument. Vela’s fans say their designer got there first. A lookbook crop has the day and month. The year is hiding just outside the frame.",
+    "setting": "The Meridian fashion circuit · Front row",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Aster’s spiral dress used reclaimed silk.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "Aster’s runway show had a live string quartet.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "Vela’s public spiral-dress debut preceded Aster’s first public version.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c4",
+        "text": "Both designers credited the same independent pleating workshop.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "Who wore the idea first?",
+        "publisher": "Front Row Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "A crop of Aster’s lookbook says 14 JUL / LOOK 07, with the year missing. The caption assumes July 2026 and says Vela’s September 2025 debut came first."
+      },
+      {
+        "id": "e2",
+        "title": "The spiral dispute",
+        "publisher": "Hemline Dispatch",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "We repeat Front Row Feed’s chronology from the same yearless lookbook crop. We have not inspected the archive."
+      },
+      {
+        "id": "e3",
+        "title": "Fashion’s most circular argument",
+        "publisher": "Bias Cut",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "Hemline Dispatch places Vela first. Our evidence is the same 14 JUL image, not a separately dated publication."
+      },
+      {
+        "id": "e4",
+        "title": "Lookbook archive and publication history",
+        "publisher": "Meridian Fashion Archive",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c3",
+        "relation": "contradicts",
+        "body": "The complete Aster lookbook was publicly deposited on July 14, 2025; Look 07 is the spiral-cut dress. Vela’s first public spiral-dress presentation was September 2, 2025. The viral crop removes the year 2025 from Aster’s page. The archive establishes chronology, not anyone’s private creative process."
+      },
+      {
+        "id": "e5",
+        "title": "Fabric allocation for Look 07",
+        "publisher": "Aster Atelier",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "Look 07 uses reclaimed silk from stock lot RS-41. The cutting sheet records no newly woven silk for this garment."
+      },
+      {
+        "id": "e6",
+        "title": "Inside the sample room",
+        "publisher": "Independent Textile Reviewer",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I inspected the RS-41 material and watched its use in Look 07 during my atelier visit. The reclaimed-stock tags matched the cutting sheet."
+      },
+      {
+        "id": "e7",
+        "title": "Show music contract",
+        "publisher": "Aster Show Office",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "A live four-person string quartet was booked for the runway. The contract lists two violins, viola and cello."
+      },
+      {
+        "id": "e8",
+        "title": "Four players beside the runway",
+        "publisher": "Independent Runway Reporter",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "I watched four string players perform beside Aster’s runway: two violinists, a violist and a cellist."
+      },
+      {
+        "id": "e9",
+        "title": "Workshop credits",
+        "publisher": "Fold / Independent Pleating",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Both Aster and Vela contracted Fold for pleating and credited the workshop in their public show notes."
+      },
+      {
+        "id": "e10",
+        "title": "Credit lines compared",
+        "publisher": "Independent Fashion Librarian",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "I checked the two original show-note booklets. Each includes an explicit credit to Fold for pleating."
+      }
+    ],
+    "research": {
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "Aster’s July 2025 public version preceded Vela’s September 2025 debut."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. Aster’s July 2025 public version preceded Vela’s September 2025 debut."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Indra Moss",
+      "role": "The fashion archivist",
+      "persona": "Cool, elegant and allergic to chronological shortcuts. Does not infer plagiarism from similarity.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "What is missing from the crop?",
+          "text": "The full lookbook page includes a year that the crop leaves out."
+        },
+        {
+          "id": "w2",
+          "question": "Does chronology prove copying?",
+          "text": "Publication dates establish order. They do not establish a designer’s private creative process."
+        },
+        {
+          "id": "w3",
+          "question": "What was the dress made from?",
+          "text": "The cutting sheet identifies reclaimed silk lot RS-41."
+        },
+        {
+          "id": "w4",
+          "question": "Was the music live?",
+          "text": "The show contract and a reporter describe a live string quartet."
+        },
+        {
+          "id": "w5",
+          "question": "Why does Fold appear in both credits?",
+          "text": "Both designers used and credited the same independent pleating workshop."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The yearless lookbook crop",
+      "eyebrow": "ASTER / LOOKBOOK",
+      "headline": "14 JUL",
+      "subline": "LOOK 07 / SPIRAL",
+      "detail": "archival page 07 · lower edge cropped",
+      "footer": "PUBLIC COLLECTION CONTACT SHEET",
+      "transcript": "ASTER / LOOKBOOK\n14 JUL\nLOOK 07 / SPIRAL\narchival page 07 · lower edge cropped\nPUBLIC COLLECTION CONTACT SHEET",
+      "initialNote": "The crop gives a day and month but no year. You cannot order two debuts from that alone.",
+      "comparisonNote": "The uncropped archive dates this page to July 2025. Vela’s September 2025 debut came later.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c3",
+      "reasonType": "silk",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The missing year reverses the apparent timeline. Aster’s public lookbook is dated July 14, 2025, before Vela’s September 2, 2025 debut. This disproves the stated order; it does not establish that either designer copied the other.",
+      "lesson": "A cropped date can reverse a timeline. Verify the full timestamp before the feud."
+    }
+  },
+  {
+    "id": "t6-last-bid",
+    "number": 6,
+    "title": "The Last Bid",
+    "category": "Art & money",
+    "art": "auction",
+    "difficulty": 3,
+    "minutes": "4–7",
+    "teaser": "Champagne, applause, and a quarter-million-dollar misunderstanding.",
+    "briefing": "At the Halation benefit auction, a mirrored sculpture sells for $240,000. The headline says every dollar went to charity. The room loves a generous ending. The settlement sheet insists on doing the math.",
+    "setting": "Halation Gallery · Lot 08",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Lot 08 sold for a $240,000 hammer price.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "The entire $240,000 hammer price was transferred to charity.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c3",
+        "text": "Four registered bidders competed for Lot 08.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "The sculpture was made from reclaimed mirror glass.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "A quarter million for the cause",
+        "publisher": "Gala Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "A photograph of the SOLD / $240,000 screen is captioned “every dollar to charity.” It does not show the auction’s donation terms."
+      },
+      {
+        "id": "e2",
+        "title": "A glittering gift",
+        "publisher": "Society Ledger",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "Our report of a full $240,000 charity transfer repeats Gala Feed’s auction-screen image. We have not seen settlement paperwork."
+      },
+      {
+        "id": "e3",
+        "title": "Art gives it all away",
+        "publisher": "Canvas Daily",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "Society Ledger reports the entire hammer price was donated. Our item cites its report and the same sale screen."
+      },
+      {
+        "id": "e4",
+        "title": "Lot 08 settlement and beneficiary receipt",
+        "publisher": "Halation Settlement Office",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c2",
+        "relation": "contradicts",
+        "body": "Lot 08’s hammer price was $240,000. The published terms allocate 25% of the hammer to the Bright Steps charity and 75% to the consignor. The charity receipt confirms $60,000 received. The remaining $180,000 was paid to the consignor. No buyer premium is included in these amounts."
+      },
+      {
+        "id": "e5",
+        "title": "Hammer record: Lot 08",
+        "publisher": "Halation Auctioneer",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "Lot 08 closed at a hammer price of $240,000. This figure excludes buyer premiums and does not state the donation allocation."
+      },
+      {
+        "id": "e6",
+        "title": "The final paddle",
+        "publisher": "Independent Auction Reporter",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I attended the sale and recorded the auctioneer’s final hammer call of $240,000 for Lot 08."
+      },
+      {
+        "id": "e7",
+        "title": "Bidder register: Lot 08",
+        "publisher": "Halation Registrar",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "Four distinct registered bidder IDs placed accepted bids for Lot 08."
+      },
+      {
+        "id": "e8",
+        "title": "Four paddles in the room",
+        "publisher": "Independent Auction Observer",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "I tracked four distinct paddles competing for Lot 08. My observation concerns bidders, not the number of individual bids."
+      },
+      {
+        "id": "e9",
+        "title": "Material certificate",
+        "publisher": "Artist’s Studio",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "The sculpture’s mirrored surfaces are made from reclaimed mirror glass. The steel support is separately listed."
+      },
+      {
+        "id": "e10",
+        "title": "Studio visit notes",
+        "publisher": "Independent Art Conservator",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "During a studio visit I inspected the reclaimed mirror stock and the completed mirrored surfaces. My observation agrees with the material certificate."
+      }
+    ],
+    "research": {
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The charity received 25%: $60,000. A sale price is not the same as a donation."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. The charity received 25%: $60,000. A sale price is not the same as a donation."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Maxine Price",
+      "role": "The settlement clerk",
+      "persona": "Impeccable suit, dangerous arithmetic, no patience for charitable rounding.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "Does the sale screen show the charity’s share?",
+          "text": "The screen shows a hammer price. Donation allocation is in the published terms."
+        },
+        {
+          "id": "w2",
+          "question": "What percentage was pledged?",
+          "text": "The terms allocate 25% of the hammer to Bright Steps."
+        },
+        {
+          "id": "w3",
+          "question": "How many bidders competed?",
+          "text": "The register shows four distinct bidder IDs for Lot 08."
+        },
+        {
+          "id": "w4",
+          "question": "What material was reclaimed?",
+          "text": "The certificate identifies the mirror glass as reclaimed."
+        },
+        {
+          "id": "w5",
+          "question": "Are buyer premiums part of these figures?",
+          "text": "The hammer and allocation figures quoted in the settlement exclude buyer premiums."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The sale screen",
+      "eyebrow": "HALATION / LOT 08",
+      "headline": "$240,000",
+      "subline": "SOLD AT HAMMER",
+      "detail": "benefit auction · terms apply",
+      "footer": "HAMMER PRICE EXCLUDES BUYER PREMIUM",
+      "transcript": "HALATION / LOT 08\n$240,000\nSOLD AT HAMMER\nbenefit auction · terms apply\nHAMMER PRICE EXCLUDES BUYER PREMIUM",
+      "initialNote": "This screen states a sale price, not a charity transfer. The phrase terms apply matters.",
+      "comparisonNote": "The settlement allocates 25% to charity: $60,000. The other $180,000 goes to the consignor.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c2",
+      "reasonType": "auction",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The headline confused the gross hammer price with the charity’s share. The disclosed allocation is 25%, and the beneficiary receipt confirms $60,000. The $240,000 sale itself is real; the claimed full donation is not.",
+      "lesson": "Always ask: a percentage of what, and paid to whom?"
+    }
+  },
+  {
+    "id": "t7-room-308",
+    "number": 7,
+    "title": "Room 308",
+    "category": "Hotels & alibis",
+    "art": "hotel",
+    "difficulty": 3,
+    "minutes": "4–7",
+    "teaser": "A midnight timestamp. An immaculate alibi. A city four hours behind the story.",
+    "briefing": "A key-card log from the Saffron Hotel has turned Dorian’s afterparty arrival into a midnight scandal. The screenshot is precise to the second. Precision is not the same thing as the right time zone.",
+    "setting": "Saffron Hotel · Port Meridian",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Dorian was a registered guest at the Saffron Hotel.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "Room 308 hosted an invitation-only afterparty.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "The hotel’s rooftop kitchen closed at 23:00 local time.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "The recorded first use of Dorian’s room-308 key occurred after local midnight.",
+        "supportEvidenceIds": []
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "The midnight key",
+        "publisher": "Late Checkout Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "A screenshot reads 2026-10-29 00:12:04Z / ROOM 308. The caption calls this Dorian’s first entry after local midnight. It does not convert the time zone."
+      },
+      {
+        "id": "e2",
+        "title": "An arrival after hours",
+        "publisher": "The Lobby Letter",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "We repeat Late Checkout Feed’s reading of the key-card screenshot. We did not obtain a local-time access log."
+      },
+      {
+        "id": "e3",
+        "title": "The room everyone is whispering about",
+        "publisher": "Suite Talk",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c4",
+        "relation": "context",
+        "body": "The Lobby Letter reports a post-midnight arrival, based on the same UTC-marked screenshot."
+      },
+      {
+        "id": "e4",
+        "title": "Access-clock configuration and converted entry",
+        "publisher": "Saffron Hotel Security",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c4",
+        "relation": "contradicts",
+        "body": "The access system stores timestamps in UTC, indicated by Z. Port Meridian was UTC−04:00 on this date. Dorian’s first key use at 2026-10-29 00:12:04Z therefore occurred at 20:12:04 local time on October 28, before local midnight. This entry does not identify any other person present."
+      },
+      {
+        "id": "e5",
+        "title": "Guest-registration confirmation",
+        "publisher": "Saffron Front Desk",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "Dorian is listed as a registered adult guest for October 28. The record confirms registration only."
+      },
+      {
+        "id": "e6",
+        "title": "Checking in at Saffron",
+        "publisher": "Independent Event Host",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I accompanied Dorian to the Saffron front desk and watched the registration and key issue. I did not enter a guest room."
+      },
+      {
+        "id": "e7",
+        "title": "Room 308 event booking",
+        "publisher": "Saffron Events",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "Room 308 is the hotel’s private event salon. It was booked for an invitation-only afterparty on October 28."
+      },
+      {
+        "id": "e8",
+        "title": "An invitation to 308",
+        "publisher": "Independent Invited Guest",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "My invitation identified room 308 as the private event salon. I attended its invitation-only afterparty."
+      },
+      {
+        "id": "e9",
+        "title": "Rooftop kitchen closing sheet",
+        "publisher": "Saffron Kitchen",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "Hot-food service on the rooftop ended at 23:00 local time on October 28. Bar service had a separate schedule."
+      },
+      {
+        "id": "e10",
+        "title": "The last kitchen order",
+        "publisher": "Independent Dining Reporter",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "I was on the rooftop when kitchen staff announced the 23:00 local close. Drinks remained available afterward."
+      }
+    ],
+    "research": {
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "00:12 UTC converts to 20:12 on the previous local date. This was an evening entry."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. 00:12 UTC converts to 20:12 on the previous local date. This was an evening entry."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Nico Bell",
+      "role": "The night concierge",
+      "persona": "Velvet voice, steel memory. Never speculates about a guest’s private company.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "What does the Z in the timestamp mean?",
+          "text": "The access-system timestamps are stored in UTC; Z marks that time basis."
+        },
+        {
+          "id": "w2",
+          "question": "What was the local offset?",
+          "text": "Port Meridian was four hours behind UTC on the event date."
+        },
+        {
+          "id": "w3",
+          "question": "Is room 308 a bedroom?",
+          "text": "The event booking identifies room 308 as a private event salon."
+        },
+        {
+          "id": "w4",
+          "question": "Was Dorian registered?",
+          "text": "The front desk record confirms Dorian’s guest registration."
+        },
+        {
+          "id": "w5",
+          "question": "When did the rooftop kitchen close?",
+          "text": "The kitchen sheet records a 23:00 local close, separate from bar service."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The key-card log",
+      "eyebrow": "SAFFRON / ACCESS AUDIT",
+      "headline": "00:12:04Z",
+      "subline": "2026-10-29 / ROOM 308",
+      "detail": "keyholder: DORIAN / first accepted use",
+      "footer": "SYSTEM EXPORT · ORIGINAL TIME BASIS",
+      "transcript": "SAFFRON / ACCESS AUDIT\n00:12:04Z\n2026-10-29 / ROOM 308\nkeyholder: DORIAN / first accepted use\nSYSTEM EXPORT · ORIGINAL TIME BASIS",
+      "initialNote": "The timestamp ends in Z. Establish the system’s time basis before calling this a local-midnight arrival.",
+      "comparisonNote": "UTC−04:00 puts this event at 20:12:04 on October 28 locally. The date changes as well as the hour.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c4",
+      "reasonType": "hotel",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The screenshot was read in the wrong time zone. The system’s UTC timestamp converts to 20:12:04 on October 28 in Port Meridian, before local midnight. The entry reveals nothing about who else was present, and room 308 is an event salon.",
+      "lesson": "Precise timestamps still need a time zone. Convert both the hour and the date."
+    }
+  },
+  {
+    "id": "t8-ghost-track",
+    "number": 8,
+    "title": "The Ghost Track",
+    "category": "Music & fame",
+    "art": "vinyl",
+    "difficulty": 3,
+    "minutes": "4–7",
+    "teaser": "Two identical waveforms. A lip-sync accusation. One file wearing two names.",
+    "briefing": "Lina Lux’s velvet encore is accused of being too perfect. Two clips labeled NIGHT 1 and NIGHT 2 have identical waveforms. Before you judge the voice, investigate whether you are even hearing two performances.",
+    "setting": "The Orchid residency · Sound desk",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The two matching viral clips are recordings from two different nights.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c2",
+        "text": "Lina performed an encore titled Slow Fever.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "The residency used a live three-piece band.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "Night two included a spoken dedication to the stage crew.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "A voice that never changes",
+        "publisher": "Waveform Watch",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Two files labeled NIGHT 1 and NIGHT 2 have matching waveforms. The uploader calls them separate performance recordings but supplies no original recording metadata."
+      },
+      {
+        "id": "e2",
+        "title": "Too perfect twice",
+        "publisher": "Backstage Dispatch",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Our two-night comparison comes from Waveform Watch’s paired files. We have not acquired the original session recordings."
+      },
+      {
+        "id": "e3",
+        "title": "The ghost in the encore",
+        "publisher": "Needle Notes",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c1",
+        "relation": "context",
+        "body": "Backstage Dispatch reports identical performances on two nights. We used the same paired clips rather than making our own recordings."
+      },
+      {
+        "id": "e4",
+        "title": "Clip export audit",
+        "publisher": "Orchid Audio Archive",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c1",
+        "relation": "contradicts",
+        "body": "Both viral files were exported from the same night-one source segment, session O1, from 01:02:10 to 01:02:34. Their source hashes match because the exporter duplicated that segment under two filenames. Night two is session O2, with different audio and duration. This audit establishes a file mix-up; it does not adjudicate every aspect of a live performance."
+      },
+      {
+        "id": "e5",
+        "title": "Encore set list",
+        "publisher": "Lina Lux Tour Desk",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "The encore for both residency nights is titled Slow Fever."
+      },
+      {
+        "id": "e6",
+        "title": "The song at the end",
+        "publisher": "Independent Music Reviewer",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "I attended the first night and heard Lina introduce the encore as Slow Fever."
+      },
+      {
+        "id": "e7",
+        "title": "Residency stage plot",
+        "publisher": "Orchid Production",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "The live band has three players: keys, bass and drums. The stage plot includes live inputs for each."
+      },
+      {
+        "id": "e8",
+        "title": "Three players, one pocket",
+        "publisher": "Independent Stage Photographer",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "From the photo pit I watched three musicians play keys, bass and drums throughout the set."
+      },
+      {
+        "id": "e9",
+        "title": "Night-two cue record",
+        "publisher": "Orchid Stage Manager",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Before the night-two encore, Lina delivered a spoken dedication thanking the stage crew."
+      },
+      {
+        "id": "e10",
+        "title": "A thank-you from the stage",
+        "publisher": "Independent Night-Two Attendee",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "I attended night two and recorded Lina’s spoken thanks to the stage crew before the encore."
+      }
+    ],
+    "research": {
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The two files repeat one night-one segment. Different filenames do not establish different recordings."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. The two files repeat one night-one segment. Different filenames do not establish different recordings."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Juno Reed",
+      "role": "The audio archivist",
+      "persona": "Warm, sardonic, meticulous about files. Never infers a singer’s method from filenames.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "Where did the paired clips originate?",
+          "text": "The archive audit traces both viral clips to session O1."
+        },
+        {
+          "id": "w2",
+          "question": "Do filenames prove separate recordings?",
+          "text": "A filename can be changed without changing the recording inside it."
+        },
+        {
+          "id": "w3",
+          "question": "What was the encore called?",
+          "text": "The tour set list names Slow Fever."
+        },
+        {
+          "id": "w4",
+          "question": "How many live musicians were there?",
+          "text": "The stage plot and a photographer describe keys, bass and drums."
+        },
+        {
+          "id": "w5",
+          "question": "Who got the night-two dedication?",
+          "text": "The stage cue record and an attendee describe a thank-you to the stage crew."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The viral waveform comparison",
+      "eyebrow": "WAVEFORM WATCH",
+      "headline": "NIGHT 1 = NIGHT 2?",
+      "subline": "slow-fever-1.wav / slow-fever-2.wav",
+      "detail": "shared source segment: O1 / 01:02:10",
+      "footer": "FILENAMES SUPPLIED BY UPLOADER",
+      "transcript": "WAVEFORM WATCH\nNIGHT 1 = NIGHT 2?\nslow-fever-1.wav / slow-fever-2.wav\nshared source segment: O1 / 01:02:10\nFILENAMES SUPPLIED BY UPLOADER",
+      "initialNote": "The filenames imply two nights, but the visible source-segment mark says O1. Check the originals.",
+      "comparisonNote": "The archive traces both exports to the same O1 segment. The matching waveforms measure a duplicate, not two performances.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c1",
+      "reasonType": "vinyl",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "Both clips are exports of the same night-one segment. A renamed duplicate naturally produces a matching waveform. The audit disproves the claim that these files document two nights; it does not prove or disprove every broader lip-sync allegation.",
+      "lesson": "Before comparing two pieces of evidence, check whether they are actually two pieces."
+    }
+  },
+  {
+    "id": "t9-vanishing-yacht",
+    "number": 9,
+    "title": "The Vanishing Yacht",
+    "category": "Escape & privilege",
+    "art": "yacht",
+    "difficulty": 3,
+    "minutes": "4–7",
+    "teaser": "A yacht, a signal gap, and a straight line through forbidden water.",
+    "briefing": "The private yacht Paloma disappears from the public tracker for twenty minutes. A perfectly straight line crosses a protected lagoon. Everyone has an opinion about its passengers. Your job is to establish where the boat actually went.",
+    "setting": "The Paloma · Azure coast",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "Paloma left the marina at 21:50 local time.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "The public tracker lost live positions for twenty minutes.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c3",
+        "text": "Paloma entered the protected lagoon during the signal gap.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c4",
+        "text": "A licensed pilot was aboard for the departure.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "The shortcut they did not want you to see",
+        "publisher": "Coastline Feed",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "A screenshot joins two public tracking points with a straight line crossing the protected lagoon. The caption treats the line as the yacht’s observed route."
+      },
+      {
+        "id": "e2",
+        "title": "A yacht above the rules",
+        "publisher": "Harbor Dispatch",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "Our lagoon-entry report is based on Coastline Feed’s straight-line map. We have no onboard fixes for the gap."
+      },
+      {
+        "id": "e3",
+        "title": "Twenty minutes of privilege",
+        "publisher": "The Wake",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c3",
+        "relation": "context",
+        "body": "Harbor Dispatch reports the crossing from the same interpolated tracker image. We did not obtain a separate navigation record."
+      },
+      {
+        "id": "e4",
+        "title": "Onboard track and public-display audit",
+        "publisher": "Azure Harbor Navigation Office",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c3",
+        "relation": "contradicts",
+        "body": "The public tracker drew a straight interpolated connector between its 21:50 and 22:10 fixes. It had no live positions between them. The onboard logger, independently downloaded at berth, records a curved route around the lagoon’s outer buoys, outside the protected boundary throughout. The public connector was labeled ESTIMATED, a legend cropped out of the shared image."
+      },
+      {
+        "id": "e5",
+        "title": "Marina departure log",
+        "publisher": "Azure Marina Control",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "Paloma cleared its assigned berth at 21:50 local time."
+      },
+      {
+        "id": "e6",
+        "title": "Watching the departure",
+        "publisher": "Independent Harbor Reporter",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I watched Paloma leave its berth and noted the marina clock reading 21:50."
+      },
+      {
+        "id": "e7",
+        "title": "Public tracker outage record",
+        "publisher": "Coastal Tracking Service",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c2-primary",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "No live Paloma positions were received between the 21:50 and 22:10 updates. The display connected the two fixes by interpolation."
+      },
+      {
+        "id": "e8",
+        "title": "A gap on my screen",
+        "publisher": "Independent Coastal Observer",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c2-observation",
+        "claimId": "c2",
+        "relation": "supports",
+        "body": "I saved the live public display as it stopped updating after 21:50 and resumed at 22:10. I saw no intermediate position reports."
+      },
+      {
+        "id": "e9",
+        "title": "Pilot assignment",
+        "publisher": "Azure Pilotage Office",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "Licensed pilot Lena Orr signed onto Paloma for its departure from Azure Marina."
+      },
+      {
+        "id": "e10",
+        "title": "Pilot boarding observation",
+        "publisher": "Independent Quay Photographer",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "I photographed Lena Orr boarding Paloma in pilot uniform and speaking with marina control before departure."
+      }
+    ],
+    "research": {
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The line is an estimate. The recovered onboard track stays outside the lagoon."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. The line is an estimate. The recovered onboard track stays outside the lagoon."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Lena Orr",
+      "role": "The harbor pilot",
+      "persona": "Unhurried, salty and precise. Passenger gossip is outside her job.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "Does a line on the public map mean a measured route?",
+          "text": "The tracker can connect missing fixes with an estimated line."
+        },
+        {
+          "id": "w2",
+          "question": "Was there another navigation record?",
+          "text": "The harbor office downloaded the onboard logger at berth."
+        },
+        {
+          "id": "w3",
+          "question": "When did Paloma leave?",
+          "text": "The marina departure log records 21:50 local time."
+        },
+        {
+          "id": "w4",
+          "question": "How long was the public signal gap?",
+          "text": "The public feed has a twenty-minute gap between 21:50 and 22:10."
+        },
+        {
+          "id": "w5",
+          "question": "Were you aboard as a licensed pilot?",
+          "text": "The pilotage assignment records me aboard for departure."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The public tracker crop",
+      "eyebrow": "PALOMA / PUBLIC TRACK",
+      "headline": "21:50 — 22:10",
+      "subline": "TWO FIXES / ONE CONNECTOR",
+      "detail": "display segment: interpolated",
+      "footer": "MAP LEGEND OUTSIDE SHARED CROP",
+      "transcript": "PALOMA / PUBLIC TRACK\n21:50 — 22:10\nTWO FIXES / ONE CONNECTOR\ndisplay segment: interpolated\nMAP LEGEND OUTSIDE SHARED CROP",
+      "initialNote": "This display shows two fixes joined by a line. It does not show measured positions between them.",
+      "comparisonNote": "The missing legend labels the line as estimated. The onboard log curves around the protected boundary.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c3",
+      "reasonType": "yacht",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The public map filled a twenty-minute signal gap with a straight line. That connector was not a measured route. The independently recovered onboard track follows the outer buoys and stays outside the protected lagoon.",
+      "lesson": "A smooth visualization can hide missing data. Separate observation from interpolation."
+    }
+  },
+  {
+    "id": "t10-diamonds-on-ice",
+    "number": 10,
+    "title": "Diamonds on Ice",
+    "category": "Jewels & illusion",
+    "art": "diamond",
+    "difficulty": 2,
+    "minutes": "4–7",
+    "teaser": "Eight million dollars in a melting ice sculpture. Allegedly.",
+    "briefing": "At the Frost & Flame gala, a necklace glitters inside a tower of ice. The press card quotes an eight-million-dollar valuation. What is being valued, what is being displayed, and why does the tray say P-04?",
+    "setting": "Frost & Flame · The midnight reveal",
+    "asOf": "2026-10-30T23:59:00Z",
+    "windowStart": "2026-10-20T00:00:00Z",
+    "claims": [
+      {
+        "id": "c1",
+        "text": "The original necklace J-01 was valued at $8 million.",
+        "supportEvidenceIds": [
+          "e5",
+          "e6"
+        ]
+      },
+      {
+        "id": "c2",
+        "text": "The necklace inside the midnight ice sculpture was the original $8 million piece.",
+        "supportEvidenceIds": []
+      },
+      {
+        "id": "c3",
+        "text": "The ice sculpture was made by artist Esme Frost.",
+        "supportEvidenceIds": [
+          "e7",
+          "e8"
+        ]
+      },
+      {
+        "id": "c4",
+        "text": "The display piece was returned to the prop team after the reveal.",
+        "supportEvidenceIds": [
+          "e9",
+          "e10"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "e1",
+        "title": "Eight million on ice",
+        "publisher": "Gala Lens",
+        "publishedAt": "2026-10-29T01:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "A photo pairs the ice-display necklace with an $8,000,000 press card. The caption identifies the displayed object as the original. Its tray code P-04 is visible."
+      },
+      {
+        "id": "e2",
+        "title": "A very expensive melt",
+        "publisher": "Jewel Dispatch",
+        "publishedAt": "2026-10-29T02:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "We identify the ice necklace as the original based on Gala Lens’s paired image, not a gem inspection."
+      },
+      {
+        "id": "e3",
+        "title": "Cold cash, colder diamonds",
+        "publisher": "The Facet",
+        "publishedAt": "2026-10-29T03:00:00Z",
+        "group": "shared-artifact",
+        "claimId": "c2",
+        "relation": "context",
+        "body": "Jewel Dispatch reports that the original was frozen for the reveal. Our image is the same P-04 tray photograph."
+      },
+      {
+        "id": "e4",
+        "title": "Display inventory and original custody record",
+        "publisher": "Frost & Flame Registrar",
+        "publishedAt": "2026-10-30T16:00:00Z",
+        "group": "primary-record",
+        "claimId": "c2",
+        "relation": "contradicts",
+        "body": "Display code P-04 identifies a plated-brass and glass replica made for the ice reveal. The original necklace, inventory J-01, remained in secured custody off site. The press card’s $8,000,000 valuation refers to J-01, not P-04."
+      },
+      {
+        "id": "e5",
+        "title": "Valuation certificate J-01",
+        "publisher": "Independent Gem Valuer",
+        "publishedAt": "2026-10-29T08:00:00Z",
+        "group": "c1-primary",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "The original necklace J-01 has an assessed value of $8,000,000. This certificate does not apply to replicas or promotional objects."
+      },
+      {
+        "id": "e6",
+        "title": "The original at appraisal",
+        "publisher": "Independent Jewelry Reporter",
+        "publishedAt": "2026-10-29T09:00:00Z",
+        "group": "c1-observation",
+        "claimId": "c1",
+        "relation": "supports",
+        "body": "I attended the J-01 appraisal presentation and inspected the valuation certificate. The object was identified as the original, not the ice-display prop."
+      },
+      {
+        "id": "e7",
+        "title": "Ice installation commission",
+        "publisher": "Frost & Flame Production",
+        "publishedAt": "2026-10-29T10:00:00Z",
+        "group": "c3-primary",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "Artist Esme Frost was commissioned to create the midnight ice sculpture and supervised installation."
+      },
+      {
+        "id": "e8",
+        "title": "Building the frozen stage",
+        "publisher": "Independent Art Photographer",
+        "publishedAt": "2026-10-29T11:00:00Z",
+        "group": "c3-observation",
+        "claimId": "c3",
+        "relation": "supports",
+        "body": "I photographed Esme Frost carving and installing the gala’s ice sculpture."
+      },
+      {
+        "id": "e9",
+        "title": "P-04 return receipt",
+        "publisher": "Frost & Flame Prop Team",
+        "publishedAt": "2026-10-29T12:00:00Z",
+        "group": "c4-primary",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "After the reveal, display replica P-04 was recovered, checked and signed back into the prop inventory."
+      },
+      {
+        "id": "e10",
+        "title": "After the melt",
+        "publisher": "Independent Backstage Reporter",
+        "publishedAt": "2026-10-29T13:00:00Z",
+        "group": "c4-observation",
+        "claimId": "c4",
+        "relation": "supports",
+        "body": "I watched the team recover the P-04 display piece and sign its return receipt after the midnight reveal."
+      }
+    ],
+    "research": {
+      "c2": {
+        "trace": {
+          "sourceIds": [
+            "e1"
+          ],
+          "note": "This is the earliest version in the file. Notice what the original author actually observed."
+        },
+        "second": {
+          "sourceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "note": "Three publications, one underlying artifact. These reports repeat the same origin; they are not three independent confirmations."
+        },
+        "primary": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "P-04 is a glass replica. The valuation belongs to the original J-01, which stayed off site."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e4"
+          ],
+          "note": "The later primary record adds the missing context. P-04 is a glass replica. The valuation belongs to the original J-01, which stayed off site."
+        }
+      },
+      "c1": {
+        "trace": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e5",
+            "e6"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e5"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e6"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c3": {
+        "trace": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e7",
+            "e8"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e7"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e8"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      },
+      "c4": {
+        "trace": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The earliest record in this file describes the claim directly. Read the document for its scope."
+        },
+        "second": {
+          "sourceIds": [
+            "e9",
+            "e10"
+          ],
+          "note": "A primary record and a separately authored firsthand observation agree. These are two independent origins."
+        },
+        "primary": {
+          "sourceIds": [
+            "e9"
+          ],
+          "note": "The first-party record supports this specific claim."
+        },
+        "fresh": {
+          "sourceIds": [
+            "e10"
+          ],
+          "note": "A later, independent observation supports the same detail."
+        }
+      }
+    },
+    "witness": {
+      "name": "Val Laurent",
+      "role": "The gala registrar",
+      "persona": "Elegant, playful and exact about object identity. A sparkle is not an inventory number.",
+      "statements": [
+        {
+          "id": "w1",
+          "question": "What does the tray code identify?",
+          "text": "P-04 identifies the ice-display prop in the inventory."
+        },
+        {
+          "id": "w2",
+          "question": "Which object has the eight-million valuation?",
+          "text": "The valuation certificate names J-01, the original necklace."
+        },
+        {
+          "id": "w3",
+          "question": "Who made the ice sculpture?",
+          "text": "The production commission names Esme Frost."
+        },
+        {
+          "id": "w4",
+          "question": "Was the display recovered?",
+          "text": "The prop receipt records P-04 checked back in after the reveal."
+        },
+        {
+          "id": "w5",
+          "question": "Was the original on site?",
+          "text": "The custody record places J-01 in secured storage off site."
+        }
+      ]
+    },
+    "artifact": {
+      "id": "s1",
+      "title": "The gala press-card photograph",
+      "eyebrow": "FROST & FLAME",
+      "headline": "$8,000,000",
+      "subline": "THE MIDNIGHT REVEAL",
+      "detail": "display tray: P-04",
+      "footer": "VALUATION CARD SHOWN BESIDE DISPLAY",
+      "transcript": "FROST & FLAME\n$8,000,000\nTHE MIDNIGHT REVEAL\ndisplay tray: P-04\nVALUATION CARD SHOWN BESIDE DISPLAY",
+      "initialNote": "The valuation and tray code are adjacent. That does not establish that they refer to the same object.",
+      "comparisonNote": "P-04 is the display replica; J-01 is the valuable original. The press photograph put two different identities side by side.",
+      "comparisonEvidenceId": "e4"
+    },
+    "verdict": {
+      "falseClaimId": "c2",
+      "reasonType": "diamond",
+      "decisiveEvidenceIds": [
+        "e1",
+        "e4"
+      ],
+      "explanation": "The photograph pairs a real valuation with the wrong object. P-04 is a glass replica used in the ice sculpture; the $8 million certificate belongs to J-01, safely off site. The returned display piece was the prop all along.",
+      "lesson": "Match the certificate to the object. Proximity is not provenance."
+    }
+  }
+]
